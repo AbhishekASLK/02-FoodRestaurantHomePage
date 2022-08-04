@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&family=Red+Rose:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+}
+body{
+  background-image: linear-gradient(rgb(158, 68, 22,.7),rgba(28, 71, 240, 0.7)),   url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+  background-size: cover;
+  height: 95vh;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+nav.navbar > div {
+  margin: 8px 20px;
+}
+nav{
+  display: flex;
+}
+nav div ul li{
+  display: inline-block;
+  margin-top: 20px;
+  color: rgb(208, 208, 20);
+  padding: 20px;
+  margin-left: 99px;
+  font-size: 20px;
+}
+
+nav > div:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 117px;
+}
+.button-small {
+  padding: 10px 20px;
+  background-color: #FF6263;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+nav > div:nth-child(1){
+  margin-left: 21px;
+}
+nav.navbar{
+  margin-top: 37px;
+  margin-left: 80px;
+}
+li.list-item{
+  padding-right: 25px;
+}
+ul.list{
+  margin-right: 25px;
+  margin-top: -34px;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+
+h1{
+  margin: auto;
+  font-size: 100px;
+  width: 1100px;
+  text-align: center;
+  color: rgb(208, 208, 20);
+}
+.hero>button{
+  display: flex;
+  background-color: #FF6263;
+  color: #fff;
+  padding: 15px 30px;
+  margin: auto;
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+  margin-top: 38px;
+  cursor: pointer;
+}
+.bottom > div > img{
+  position: absolute;
+  float: right;
+  right: 100px;
+  width: 135px;
+  bottom: 50px;
+}
+.hero{
+  margin-top: 50px;
+}
