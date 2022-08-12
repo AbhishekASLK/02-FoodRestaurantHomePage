@@ -19,14 +19,15 @@
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Food Restaurant Home Page</title>
   </head>
   <body>
     <div class="container">
       <section aria-label="navbar">
         <nav class="navbar">
           <div>
-            <img src="./assets/white-logo.png" alt="logo" class="logo" />
+            <img src="./assets/logo.png" alt="logo" class="logo" />
           </div>
           <div>
             <ul class="list">
@@ -35,9 +36,25 @@
               <li class="list-item">About</li>
               <li class="list-item">Contact</li>
             </ul>
+            <div class="bar-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>  
+          </div>
+        </nav>
+        <nav class="navbar2">
+          <div>
+            <img src="./assets/logo.png" alt="logo" class="logo2" />
           </div>
           <div>
-            <button class="button-small">Order</button>
+            <ul class="list2">
+              <li class="list-item2">Our Menu</li>
+              <li class="list-item2">Maps</li>
+              <li class="list-item2">About</li>
+              <li class="list-item2">Contact</li>
+            </ul>
+            <div class="bar-icon2">
+              <i class="fa-solid fa-bars"></i>
+            </div>  
           </div>
         </nav>
       </section>
@@ -47,14 +64,27 @@
           <h1 class="hero-heading">
             A Restaurant That Only Serves Delicious Food
           </h1>
-          <button class="button-large">Read Our Menu</button>
-          <div class="bottom">
-            <div>
-              <img src="./assets/scrool.png" alt="bottom-logo" />
-            </div>
+          <div class="btn">
+            <button class="button-large">Read Our Menu</button>
           </div>
+          <div>
+            <button class="button-small"><i class="fa-solid fa-cart-arrow-down"></i> Order</button>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/scrool.png" alt="bottom-logo" class="bottom-img"/>
         </div>
       </section>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector('.bar-icon');
+      const navlinks = document.querySelector('.list');
+
+      menuBtn.addEventListener('click',()=>{
+          navlinks.classList.toggle('mobile-menu');
+      })
+    </script>
+
   </body>
 </html>
