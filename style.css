@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(88, 88, 173);
+  background: linear-gradient(rgba(0, 0, 0, 0.701), rgba(10, 19, 86, 0.888)), url('./assets/background.png');
   overflow-y: hidden;
 }
 
@@ -20,6 +20,7 @@ body {
   top: 2.5rem;
   right: 2.5rem;
   font-size: 7vmin;
+  color: white;
 }
 
 .navbar {
@@ -193,11 +194,6 @@ li {
     color: yellow;
     font-size: 11vmin;
     padding: 0 30px;
-  }
-
-  body {
-    background-image: url(./assets/background.png);
-    background-size: cover;
   }
 
   .logo {
